@@ -18,6 +18,8 @@ OPENROUTER_IMAGE_EDIT_MODEL = os.environ.get("OPENROUTER_IMAGE_EDIT_MODEL", OPEN
 
 # Asset extraction (bounding boxes) — a Gemini model reached through OpenRouter.
 ASSET_EXTRACTION_MODEL = os.environ.get("ASSET_EXTRACTION_MODEL", "google/gemini-3.6-flash")
+# Asset-description planning model used by the standalone extraction API.
+ASSET_DESCRIPTION_MODEL = os.environ.get("ASSET_DESCRIPTION_MODEL", "anthropic/claude-sonnet-5")
 
 # Optional: Replicate powers `remove_backgrounds` (no OpenRouter equivalent).
 REPLICATE_API_KEY = os.environ.get("REPLICATE_API_KEY", None)
