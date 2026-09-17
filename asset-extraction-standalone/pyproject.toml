@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "asset-extraction-standalone"
+version = "0.3.0"
+description = "Asset extraction as a pure Python function backed by a LangChain Deep Agent tool"
+authors = []
+license = "MIT"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+python-dotenv = "^1.0.0"
+pydantic = "^2.10"
+pillow = "^10.3.0"
+pillow-heif = "^0.18.0"
+httpx = "^0.28.1"
+langchain = "^1.4.0"
+langchain-core = "^1.6.3"
+langchain-openrouter = "0.2.8"
+deepagents = "0.7.13"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.352"
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

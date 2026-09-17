@@ -1,0 +1,29 @@
+{
+  "name": "asset-extraction-standalone-ts",
+  "version": "0.1.0",
+  "description": "Asset extraction as a pure TypeScript function using LangChain Deep Agent + OpenRouter",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.11",
+    "@langchain/langgraph": "^1.4.15",
+    "@langchain/langgraph-checkpoint": "^1.1.5",
+    "@langchain/langgraph-sdk": "^1.11.0",
+    "@langchain/openrouter": "^0.4.13",
+    "deepagents": "latest",
+    "langchain": "^1.5.11",
+    "langsmith": "0.3.87",
+    "sharp": "^0.33.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/sharp": "^0.31.0",
+    "typescript": "^5.0.0"
+  }
+}
